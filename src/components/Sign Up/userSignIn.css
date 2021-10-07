@@ -1,0 +1,56 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* User Sign Up combine */
+.right_left
+{
+    height: 100vh;
+    display: flex;
+}
+
+
+/* Sign Up right side */
+.left
+{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+.left figure
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left figure figcaption
+{
+    margin: 20px;
+}
+
+.left .card
+{
+    width: 60%;
+    padding: 20px;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Sign Up left side */
+.right
+{
+    height: 100%;
+    width: 50%;
+}
+
