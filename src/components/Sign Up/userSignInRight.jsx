@@ -1,7 +1,7 @@
 import React from 'react'
 import "./userSignIn.css";
 
-export default function rightcomp() {
+export default function UserSignInRight() {
     return (
         <section className="right">
             This is right side 

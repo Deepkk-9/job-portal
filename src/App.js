@@ -1,15 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
 } from "react-router-dom";
-import ForgotPassword from "./components/Forgot Password/forgotPassword";
-import UserSignIn from './components/Sign Up/userSignIn';
+import ForgotPassword from "./components/Forgot Password/ForgotPassword";
+import UserSignIn from './components/Sign Up/UserSignIn';
 
 function App() {
   return (
@@ -31,10 +27,10 @@ function App() {
 
       
       <Switch>
-          <Route exact path="/ForgotPassword">
+          <Route path="/ForgotPassword">
               <ForgotPassword />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
               <UserSignIn />
           </Route>
       </Switch>

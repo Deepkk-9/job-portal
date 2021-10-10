@@ -1,12 +1,12 @@
 import React from 'react';
 import "./userSignIn.css";
-import UserSignInRight from './userSignInRight';
-import UserSignInLeft from './userSignInLeft';
+import UserSignInRight from './UserSignInRight';
+import UserSignInLeft from './UserSignInLeft';
 
-export default function userSignUp() {
+export default function UserSignIn() {
     return (
         <section className="right_left">
-            <UserSignInLeft />
+            <UserSignInLeft title="PobWork"/>
             <UserSignInRight />
         </section>
     )

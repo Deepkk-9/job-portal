@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
@@ -19,8 +21,6 @@
     width: 50%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    place-items: center;
-    justify-content: space-evenly;
 }
 
 .left figure
@@ -28,22 +28,81 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 25px 0px;
+}
+.left figure img
+{
+    margin: 2.5px;
 }
 
 .left figure figcaption
 {
-    margin: 20px;
+    margin: 2.5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 51px;
+    letter-spacing: 0.05em;
+    color: #0A66C2;
+
 }
 
-.left .card
+
+.left .logIncard
 {
-    width: 60%;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    display: grid;
+    place-items: center;
+}
+
+.left .logIncard .card
+{
+    width: max-content;
     padding: 20px;
     border-radius: 7px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     place-items: center;
     justify-content: space-evenly;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: Montserrat;
+}
+
+.left .logIncard .card .input 
+{
+    width: 300px;
+    height: 45px;
+    position: relative;
+    margin: 10px 0px;
+}
+
+.left .logIncard .card .input input
+{
+    width: 280px;
+    height: 100%;
+    border: solid 1px black;
+    border-radius: 7px;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.left .logIncard .card .input label
+{
+    position: absolute;
+    top: 32%;
+    left: 10px;
+    transition: top 0.2s;
+}
+
+.left .logIncard .card .input :focus ~ label
+{
+    top: -18%;
+    background-color: white;
+    font-size: 13px;
+    transition: top 0.2s;
 }
 
 

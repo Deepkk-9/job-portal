@@ -1,34 +1,48 @@
 import React from 'react'
 import "./userSignIn.css";
+import logo from '../../assets/icons/PWlogo.svg';
 import { Link } from "react-router-dom";
 
-export default function userSignUpLeft() {
+export default function UserSignInLeft(props) {
     return (
         <section className="left">
             <figure>
                 <figcaption>
-                    PobWork
+                    {props.title}
                 </figcaption>
 
-                <img src="/job-portal/assets/icons/PWlogo.svg" alt="logo" />
+                <img src={logo} alt="logo" />
             </figure>
 
-            <section className="card">
+            <section className="logIncard">
 
-                <h2>Sign In</h2>
+                <section className="card">
 
-                <label htmlFor="mail_phno">Email or phone</label>
-                <input id="mail_phno"></input>
+                    <h2>Sign In</h2>
 
-                <label htmlFor="mail_phno">Password</label>
-                <input id="mail_phno"></input>
+                    <div className="input input1">
+                        <input id="mail_phno"></input>
+                        <label htmlFor="mail_phno">Email or phone</label>
+                    </div>
 
-                <Link exact="true" to="/ForgotPassword">ForgotPassword?</Link>
 
-                <button>Sign In</button>
+                    <div className="input input2">
+                        <input id="password"></input>
+                        <label htmlFor="password">Password</label>
+                    </div>
+
+                    <Link exact="true" to="/ForgotPassword">ForgotPassword?</Link>
+
+                    <button>Sign In</button>
+                    <p>New to {props.title}? Join Now</p>
+                </section>
             </section>
 
-            <p>New to PobWork? Join Now</p>
         </section>
     )
 }
+
+
+UserSignInLeft.defaultProps = {
+    title: "Your Title"
+};
