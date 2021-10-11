@@ -45,14 +45,13 @@
     line-height: 51px;
     letter-spacing: 0.05em;
     color: #0A66C2;
-
 }
 
 
 .left .logIncard
 {
     grid-row-start: 2;
-    grid-row-end: 10;
+    grid-row-end: 100;
     display: grid;
     place-items: center;
 }
@@ -60,11 +59,12 @@
 .left .logIncard .card
 {
     width: max-content;
-    padding: 20px;
+    padding: 25px;
     border-radius: 7px;
     display: grid;
+    grid-gap: 25px;
     grid-template-columns: repeat(1,1fr);
-    place-items: center;
+    justify-content: center;
     justify-content: space-evenly;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     font-family: Montserrat;
@@ -75,7 +75,6 @@
     width: 300px;
     height: 45px;
     position: relative;
-    margin: 10px 0px;
 }
 
 .left .logIncard .card .input input
@@ -83,7 +82,7 @@
     width: 280px;
     height: 100%;
     border: solid 1px black;
-    border-radius: 7px;
+    border-radius: 5px;
     outline: none;
     padding: 0px 10px;
     font-size: 16px;
@@ -104,6 +103,34 @@
     font-size: 13px;
     transition: top 0.2s;
 }
+
+.left .logIncard .card .links
+{
+    text-decoration: none;
+    color: #0A66C2;
+    font-weight: 600;
+}
+
+.left .logIncard .card button
+{
+    background-color: #0A66C2;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    padding: 13px 0px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.left .logIncard .card p
+{
+    text-align: center;
+}
+
+
+
+
 
 
 /* Sign Up left side */

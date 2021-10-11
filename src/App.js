@@ -5,34 +5,26 @@ import {
   Route,
 } from "react-router-dom";
 import ForgotPassword from "./components/Forgot Password/ForgotPassword";
-import UserSignIn from './components/Sign Up/UserSignIn';
+import UserSignIn from './components/Sign In/UserSignIn';
+import UserSignUp from './components/Sign Up/UserSignUp';
 
 function App() {
   return (
     <Router>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-
       
       <Switch>
-          <Route path="/ForgotPassword">
-              <ForgotPassword />
-          </Route>
-          <Route path="/">
+          <Route exact path="/">
               <UserSignIn />
           </Route>
+
+          <Route exact path="/ForgotPassword">
+              <ForgotPassword />
+          </Route>
+
+          <Route exact path="/UserSignUp">
+              <UserSignUp />
+          </Route>
+
       </Switch>
     </Router>
   );
